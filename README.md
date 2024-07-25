@@ -32,61 +32,38 @@ $ pip install -r requirements.txt
 在项目根目录下创建 `.env` 文件，并填入以下内容：
 
 ```
-GLM_API=
-KIMI_API=
 QWEN_API=
-SENSETIME_AK=
-SENSETIME_SK=
-HUIDA_API_KEY=
-DEEPSEEK_API=
 ```
 
 将对应的 API 密钥填入等号右侧。
 
 <br />
 
-> **步骤 4** - 初始化 `AgentOpener` 并获取 `llm` 对象
+> **步骤 4** - 指定项目信息并导入类
 
 ```python
-from your_module import AgentOpener, RepoProcessor
-
-agentopener = AgentOpener(service_type='qwen')
-llm = agentopener.service
+root_folder = r"D:\Joining\mem0-main\mem0-main"
+new_root_folder = r'mem0'
+exclude_list=[r'D:\Joining\mem0-main\mem0-main\.github']
+from Applications.RepoAnnotator import RepoAnnotator
 ```
-
+将 `root_folder` 替换为你的项目根目录路径，`new_root_folder` 替换为翻译后文件的目标文件夹路径，`exclude_list` 中填入你想要排除的目录或文件路径。
 <br />
 
 > **步骤 5** - 处理项目
 
 ```python
-processor = ...  # Initialize your processor
-project_processor = RepoProcessor(processor, llm)
-root_folder = r"your_project_root_folder"
-new_root_folder = 'your_translate_root_folder'
-exclude_list = ['the_folder_you_want_to_exclude', 'another_file_you_want_to_exclude']
-
-project_processor.process_repo_code(root_folder, new_root_folder, threshold=2048, max_workers=50, exclude_paths=exclude_list)
+RepoAnnotator.run(root_folder, new_root_folder, exclude_list)
 ```
-
-将 `your_project_root_folder` 替换为你的项目根目录路径，`your_translate_root_folder` 替换为翻译后文件的目标文件夹路径，`exclude_list` 中填入你想要排除的目录或文件路径。
-
-<br />
-
-
-> **步骤 6** - 运行项目
-
 直接运行 `ipynb` 文件即可。
 
 <br />
 
-## 🚀 贡献
-
-我们非常欢迎您的贡献！如果您感兴趣，请查看 [contributing](CONTRIBUTING.md)。
 
 ## ✉️ 支持 / 联系我们
 
 - [社区讨论区](https://discord.gg/spBgZmm3Xe)
-- 我们的邮箱: support@sjtujoining.com
+- 我们的邮箱: inuyasha2023ch@gmail.com
 
 ## 🛡 免责声明
 
