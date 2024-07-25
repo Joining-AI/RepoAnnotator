@@ -1,0 +1,69 @@
+{
+    "name_list": [
+        "qwen-long",
+        "qwen-turbo",
+        "qwen-turbo-0206",
+        "qwen-turbo-0624",
+        "qwen-plus",
+        "qwen-plus-0206",
+        "qwen-plus-0624",
+        "qwen-max",
+        "qwen-max-0428",
+        "qwen-max-0403",
+        "qwen-max-0107",
+        "qwen-max-1201",
+        "qwen-max-longcontext"
+    ],
+    "qwen-long": {
+        "input_price": 0.0000005,
+        "output_price": 0.000002
+    },
+    "qwen-turbo": {
+        "input_price": 0.000002,
+        "output_price": 0.000006
+    },
+    "qwen-turbo-0206": {
+        "input_price": 0.000002,
+        "output_price": 0.000006
+    },
+    "qwen-turbo-0624": {
+        "input_price": 0.000002,
+        "output_price": 0.000006
+    },
+    "qwen-plus": {
+        "input_price": 0.000004,
+        "output_price": 0.000012
+    },
+    "qwen-plus-0206": {
+        "input_price": 0.000004,
+        "output_price": 0.000012
+    },
+    "qwen-plus-0624": {
+        "input_price": 0.000004,
+        "output_price": 0.000012
+    },
+    "qwen-max": {
+        "input_price": 0.00004,
+        "output_price": 0.00012
+    },
+    "qwen-max-0428": {
+        "input_price": 0.00004,
+        "output_price": 0.00012
+    },
+    "qwen-max-0403": {
+        "input_price": 0.00004,
+        "output_price": 0.00012
+    },
+    "qwen-max-0107": {
+        "input_price": 0.00004,
+        "output_price": 0.00012
+    },
+    "qwen-max-1201": {
+        "input_price": 0.00004,
+        "output_price": 0.00012
+    },
+    "qwen-max-longcontext": {
+        "input_price": 0.00004,
+        "output_price": 0.00012
+    }
+}

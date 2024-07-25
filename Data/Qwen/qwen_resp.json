@@ -1,0 +1,35 @@
+[
+    {
+        "status_code": 0, 
+        "request_id": "string",
+        "code": null,
+        "message": null,
+        "output": {
+            "text": "string",
+            "finish_reason": "string",
+            "choices": [
+                {
+                    "finish_reason": "string",
+                    "message": {
+                        "role": "string",
+                        "content": "string"
+                    }
+                }
+            ]
+        },
+        "usage": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+        }
+    },
+    
+    {
+        "status_code": 0,
+        "request_id": "string",
+        "code": "string",
+        "message": "string",
+        "output": null,
+        "usage": null
+    }
+]

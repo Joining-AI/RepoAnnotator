@@ -1,0 +1,32 @@
+{
+    "400": {
+        "Invalid file": "提供的文件ID存在问题",
+        "Too many files provided": "提供的对话文档数量大于等于100",
+        "File cannot be found": "输入的文件已经被删除",
+        "File exceeds size limit": "文档大小超限",
+        "File exceeds page limits": "文档页数超限",
+        "Multiple types of file system prompt detected": "输入的文件中包含了fileid和文件内容两种方式，当前暂不支持两种方式混用",
+        "File format is not supported": "文档格式不支持",
+        "File content blank": "文档内容为空",
+        "Total message token length exceed model limit": "输入的messages总token数超过了10M",
+        "Single round file-content exceeds token limit": "输入的单条message token数超过了9K",
+        "Role specification invalid": "messages组装格式存在问题，请参考上述参数描述与示例代码进行参考",
+        "File parsing in progress": "文档解析中，请稍后再试",
+        "Input data may contain inappropriate content": "数据检查错误，输入包含疑似敏感内容被绿网拦截"
+    },
+    "429": {
+        "You exceeded your current requests list": "您超出了对模型访问的限流值，请稍后再试"
+    },
+    "500": {
+        "File parsing error": "文档解析失败",
+        "File parsing timeout": "文档解析超时",
+        "Preprocessor error": "大模型前处理错误",
+        "Postprocessor error": "大模型后处理错误",
+        "File content conversion error": "文档message处理错误",
+        "An unspecified internal error has occured": "调用大模型出现异常",
+        "Response timeout": "处理超时，可尝试重试"
+    },
+    "503": {
+        "The engine is currently overloaded": "服务端负载过高，可重试"
+    }
+}

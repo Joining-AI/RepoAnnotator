@@ -64,14 +64,12 @@ class JSProcessor:
             # 尝试将提取的字符串解析为Python列表
             knowledge_points = ast.literal_eval(list_str)
             if isinstance(knowledge_points, list):
-                self.analysed_list = knowledge_points
                 return knowledge_points
             else:
                 raise ValueError("解析出的对象不是列表。")
         except Exception as e:
-            print(f"解析失败，错误信息：{e}。原文字串为{str_with_list}")
-            return None
-
+            raise RuntimeError(f"解析失败，错误信息：{e}。原文字串为{str_with_list}")
+        
     def parse_dict(self,str_with_dict):
         try:
             # 替换中文标点为英文标点
@@ -95,8 +93,7 @@ class JSProcessor:
             else:
                 raise ValueError("解析出的对象不是字典。")
         except Exception as e:
-            print(f"解析失败，错误信息：{e}。原文字串为{str_with_dict}")
-            return None
+            raise RuntimeError(f"解析失败，错误信息：{e}。原文字串为{str_with_dict}")
 
     def parse_code(self,markdown_text):
         """
